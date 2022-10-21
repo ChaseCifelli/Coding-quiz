@@ -45,10 +45,6 @@ h1 {
   margin-bottom: 60px;;
 }
 
-#add {
-  background-color: #093145;;
-}
-
-#subtract {
-  background-color: #f64900
+#questionpage {
+  display: none;
 }

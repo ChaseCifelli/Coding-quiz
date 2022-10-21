@@ -1,23 +1,15 @@
-var counter = document.querySelector("#counter");
-var addButton = document.querySelector("#add");
-var subtractButton = document.querySelector("#subtract");
+//var counter = document.querySelector("#counter");
+var startbutton = document.querySelector("#start");
+var startpage = document.querySelector("#startpage");
+var questionpage = document.querySelector("#questionpage");
+//var count = localStorage.getItem("count");
 
-var count = localStorage.getItem("count");
+//counter.textContent = count;
 
-counter.textContent = count;
+startbutton.addEventListener("click", function() {
+ startpage.style.display="none";
+ questionpage.style.display="block";
 
-addButton.addEventListener("click", function() {
-  if (count < 24) {
-    count++;
-    counter.textContent = count;
-    localStorage.setItem("count", count);
-  }
 });
 
-subtractButton.addEventListener("click", function() {
-  if (count > 0) {
-    count--;
-    counter.textContent = count;
-    localStorage.setItem("count", count);
-  }
-});
+
